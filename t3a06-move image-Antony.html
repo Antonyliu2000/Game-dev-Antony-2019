@@ -1,0 +1,19 @@
+<h2 align=center>Move Image by Antony </h2>
+
+<input type=text value=0 onMouseOver="{
+  this.value = 'x = ' + document.getElementById('myImage01').style.left
+}"><br>
+<hr>
+
+
+
+<img src="myImage01.JPG"  id="myImage01" style="position:relative; z-indes:-1; left:0px; top:0px; height:100px; width:100px">
+
+
+
+
+<input type=button value="Go right" onClick="{
+  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+}">
+
