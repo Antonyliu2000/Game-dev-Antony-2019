@@ -4,6 +4,8 @@
 </head>
 
 <body onkeydown="{
+       document.all.myText01.value = event.key
+   
     if(event.key == 'd'){ document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'}  // d = go right
     if(event.key == 's'){ document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'}  // s = go down
     if(event.key == 'w'){ document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'}  // s = go up
@@ -12,20 +14,14 @@
 
 
 
-w
-
-
-
 }">
 
 
 
-<h2 align=center>Move Image by Antony </h2>
+<h2 align=center> WASD by Antony </h2>
 
-<input type=text value=0 onMouseOver="{
-  this.value = 'x = ' + document.getElementById('myImage01').style.left
-}"><br>
-<hr>
+<input id="myText01" type=text value=0 size=6 ><br>
+
 
 
 
@@ -37,5 +33,8 @@ w
 <input type=button value="Go right" onClick="{
   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
   document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+
+</body>
+</html>
 }">
 
