@@ -18,3 +18,31 @@ document.getElementById('myDiv06').innerHTML=myPass
   myVariable = 2019
   myFun(myVariable)
 }">
+
+
+<div id="myDiv06">3+3=</div><br>
+
+<input type=button value="Functions" onclick="{
+  myVariable = 6
+  myFun(myVariable)
+}">
+
+
+
+<script>
+function myFun(){
+  document.getElementById('myDiv01').innerHTML = ''+document.getElementById('myText01').value+' x '+document.getElementById('myText01').value+'= '+
+   document.getElementById('myText01').value *
+   document.getElementById('myText01').value
+}
+</script>
+
+
+<input type=text value=3 id="myText01" >
+
+<input type=button value="Run function myFun" onclick="{
+    myFun()
+}">
+
+<div id="myDiv01">...</div>
+
