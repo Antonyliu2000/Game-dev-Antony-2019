@@ -1,0 +1,109 @@
+<h3 align=center> t3a13-view-Antony.html </h3>
+
+
+
+
+
+
+<input type=button value="myDiv01" style="height:30px" onClick="{ 
+	document.getElementById('myDiv01').innerHTML =`
+
+     <ol>9 components of programming
+     <li>input / output:using text an div's
+     <li>variables:x = 3 
+     <li>Decisions:if(x==3){}
+     <li>Loops:(x=0; x < 3; x++){}
+     <li>Functions:function myFun() {}
+     <li>Arrays:x[0] = 3;    x[1] = 6; 
+     <li>Objects:x = {age:20, name:'fred'} x.age    x.name
+     <li>Events:onClick(), onMouseOver(), onBlur(), onFocus() about 20 learn them
+     <li>Classes:methods    --> functions properties --> variables
+     
+`}" >
+
+     
+<input type=button value="Basics" onclick="{
+ myX = 3
+ myWord = 'Dog'
+// myArray[3] = 'Super'
+ document.all.myArea01.value = '3 x 3 = ' + myX * myX
+x = 9
+  if (x == 9){ 
+
+ document.all.myArea01.value = 'Wow a nine'
+   }else{
+ document.all.myArea01.value = 'Wow not a nine' 
+   }
+}">
+
+
+
+
+<input type=button value="Mediom" onclick="{
+  myX = 3
+  if(myX ==3){
+     document.all.myArea01.value = 'Yes myX does equal 3.It is' + myX
+  }else{
+     document.all.myArea01.value = 'NO myX was ' + myX
+  }
+}">
+     
+    
+
+<input type=button value="Advanced" onClick="{
+
+person = {
+  firstName: 'Antony',
+  lastName: 'Liu',
+  age:' 19',
+  eyeColor:'blue'
+}
+ 
+   document.all.myArea01.value = 'person.firstName is ' +
+        person.lastName + ' person.age is '
+}">   
+
+
+
+<div id="myDiv01" >...</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type=text id="myText01" value="Fred"><br>
+<textarea id="myArea01" rows=4 cols=70></textarea><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
