@@ -3,9 +3,10 @@
 
 
 
+<input type=text id="myText01" value="Fred"><br>
 
 
-<input type=button value="myDiv01" style="height:30px" onClick="{ 
+<input type=button value='course' style="height:30px" onClick="{ 
 	document.getElementById('myDiv01').innerHTML =`
 
      <ol>9 components of programming
@@ -23,16 +24,14 @@
 
      
 <input type=button value="Basics" onclick="{
- myX = 3
- myWord = 'Dog'
-// myArray[3] = 'Super'
- document.all.myArea01.value = '3 x 3 = ' + myX * myX
-x = 9
+document.getElementById('myDiv01').innerHTML = document.all.myText01.value   
+}"
+      x = 9
   if (x == 9){ 
 
- document.all.myArea01.value = 'Wow a nine'
-   }else{
- document.all.myArea01.value = 'Wow not a nine' 
+ document.getElementById('myDiv01').innerHTML = 'Wow you win'
+  
+ document.getElementById('myDiv01').innerHTML = 'Wow not a nine' 
    }
 }">
 
@@ -42,9 +41,9 @@ x = 9
 <input type=button value="Mediom" onclick="{
   myX = 3
   if(myX ==3){
-     document.all.myArea01.value = 'Yes myX does equal 3.It is' + myX
+      document.getElementById('myDiv01').innerHTML = 'Yes myX does equal 3.It is' + myX
   }else{
-     document.all.myArea01.value = 'NO myX was ' + myX
+      document.getElementById('myDiv01').innerHTML = 'NO myX was ' + myX
   }
 }">
      
@@ -59,8 +58,8 @@ person = {
   eyeColor:'blue'
 }
  
-   document.all.myArea01.value = 'person.firstName is ' +
-        person.lastName + ' person.age is '
+  document.getElementById('myDiv01').innerHTML = 'person.firstName is ' +
+        person.firstName + ' person.age is ' + person.age
 }">   
 
 
@@ -72,28 +71,6 @@ person = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<input type=text id="myText01" value="Fred"><br>
-<textarea id="myArea01" rows=4 cols=70></textarea><br>
 
 
 
