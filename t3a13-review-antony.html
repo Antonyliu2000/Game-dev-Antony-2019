@@ -19,20 +19,19 @@
      <li>Objects:x = {age:20, name:'fred'} x.age    x.name
      <li>Events:onClick(), onMouseOver(), onBlur(), onFocus() about 20 learn them
      <li>Classes:methods    --> functions properties --> variables
-     
-`}" >
+     `
+}" >
 
      
 <input type=button value="Basics" onclick="{
-document.getElementById('myDiv01').innerHTML = document.all.myText01.value   
-}"
-      x = 9
-  if (x == 9){ 
+     x = document.all.myText01.value   
+  if (x == 9){
+     document.getElementById('myDiv01').innerHTML = 'Wow you win'
+  } else {  
+       document.getElementById('myDiv01').innerHTML = 'Wow not a nine' 
+  }   
 
- document.getElementById('myDiv01').innerHTML = 'Wow you win'
-  
- document.getElementById('myDiv01').innerHTML = 'Wow not a nine' 
-   }
+
 }">
 
 
@@ -44,7 +43,7 @@ document.getElementById('myDiv01').innerHTML = document.all.myText01.value
       document.getElementById('myDiv01').innerHTML = 'Yes myX does equal 3.It is' + myX
   }else{
       document.getElementById('myDiv01').innerHTML = 'NO myX was ' + myX
-  }
+    }
 }">
      
     
